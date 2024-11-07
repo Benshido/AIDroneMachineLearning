@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LoseState.uss?fileID=7433441132597879392&amp;guid=29a28a1feeeeeea4d8fa7bddedec5281&amp;type=3#LoseState" />
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; background-color: rgba(255, 0, 6, 0.39);">
+        <ui:VisualElement name="Container" class="lose-state" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Mission Failed" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MissionFailed" style="max-height: 150px; transition-property: scale; transition-timing-function: ease-in-out; transition-duration: 0.5s; scale: 1.2 1.2;" />
+            <ui:Label tabindex="-1" text="Press any button to Respawn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Respawn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

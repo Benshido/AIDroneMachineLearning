@@ -1,0 +1,68 @@
+.panel {
+    background-color: rgba(91, 215, 142, 0.39);
+}
+
+.win-state {
+    align-items: center;
+    width: 1066px;
+    background-color: rgba(213, 213, 213, 0.76);
+    max-height: 646px;
+}
+
+.unity-button {
+    width: 400px;
+    max-height: 115px;
+    height: 130px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    align-items: stretch;
+    transform-origin: center;
+    scale: 1 1;
+    background-color: rgba(183, 191, 181, 0.71);
+    left: 0;
+    top: 199px;
+    opacity: 1;
+    flex-direction: column;
+    align-self: auto;
+    font-size: 14px;
+    -unity-text-align: upper-center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    flex-wrap: nowrap;
+}
+
+.unity-text-element {
+    border-top-width: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    font-size: 40px;
+    -unity-font: url("project://database/Assets/UnityTechnologies/ParticlePack/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=628c045823d859a46bc536a5f94c2fd8&type=3#LiberationSans");
+    -unity-text-align: middle-center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.unity-label {
+    top: auto;
+}
+
+.unity-button:hover {
+    background-color: rgba(155, 155, 155, 0.95);
+    scale: 1.1 1.1;
+    transition-property: scale;
+    transition-duration: 0.05s;
+    transition-timing-function: ease-in-out;
+}
