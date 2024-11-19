@@ -141,8 +141,6 @@ public class DroneController : MonoBehaviour
 
         // Update last position
         lastPosition = transform.position;
-
-
     }
     public void gravity(bool hooked)
     {
