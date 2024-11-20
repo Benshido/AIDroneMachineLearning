@@ -30,9 +30,9 @@ public class DroneAgent : Agent
     public float SpeedDelay = 0.5f;
 
     private Vector3 lastPosition;
+
     public override void OnEpisodeBegin()
     {
-        rigidbody = GetComponent<Rigidbody>();
         transform.localPosition = Vector3.zero;
     }
 
@@ -44,12 +44,10 @@ public class DroneAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float elevationInput = actions.ContinuousActions[0];
-        float yRotationInput = actions.ContinuousActions[1];
-        float forwardAccelerationInput = actions.ContinuousActions[2];
-        float sidewaysAccelerationInput = actions.ContinuousActions[3];
-
-        ManeuverDrone(elevationInput, yRotationInput, forwardAccelerationInput, sidewaysAccelerationInput);
+        ElevationInput = actions.ContinuousActions[0];
+        YRotationInput = actions.ContinuousActions[1];
+        ForwardAccelerationInput = actions.ContinuousActions[2];
+        SidewaysAccelerationInput = actions.ContinuousActions[3];
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -75,7 +73,12 @@ public class DroneAgent : Agent
         }
     }
 
-    public void ManeuverDrone(float m_elevationInput, float m_yRotationInput, float m_forwardAccelerationInput, float m_sidewaysAccelerationInput)
+    void Start()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+    }
+
+    void FixedUpdate()
     {
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         // Setting the correct force according to the stick input
@@ -83,8 +86,9 @@ public class DroneAgent : Agent
         rigidbody.AddRelativeTorque(0, TurnSpeed * Time.deltaTime, 0);
 
         // Setting the correct stick controls
-        ElevationInput = m_elevationInput;
-        YRotationInput = m_yRotationInput;
+        //ElevationInput = m_elevationInput;
+        //YRotationInput = m_yRotationInput;
+
         // Using translate to set elevation and rotation with the left stick
         if (ElevationInput > LiftDeadZone)
         {
@@ -123,7 +127,7 @@ public class DroneAgent : Agent
         }
 
         // Setting the correct stick input
-        ForwardAccelerationInput = m_forwardAccelerationInput;
+        //ForwardAccelerationInput = m_forwardAccelerationInput;
         // Setting the forwards and backwards speed for the right stick movement
         if (ForwardAccelerationInput < -StickDeadZone)
         {
@@ -141,7 +145,7 @@ public class DroneAgent : Agent
         }
 
         // Setting the correct stick input
-        SidewaysAccelerationInput = m_sidewaysAccelerationInput;
+        //SidewaysAccelerationInput = m_sidewaysAccelerationInput;
         // Setting the sideways speed for the right stick movement
         if (SidewaysAccelerationInput > StickDeadZone)
         {
