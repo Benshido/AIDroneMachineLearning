@@ -1,0 +1,29 @@
+{
+    "DroneGoesUp": {
+        "checkpoints": [
+            {
+                "steps": 398459,
+                "file_path": "results\\DroneGoesUp2\\DroneGoesUp\\DroneGoesUp-398459.onnx",
+                "reward": 0.36075949367088606,
+                "creation_time": 1732197280.7086444,
+                "auxillary_file_paths": [
+                    "results\\DroneGoesUp2\\DroneGoesUp\\DroneGoesUp-398459.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 398459,
+            "file_path": "results\\DroneGoesUp2\\DroneGoesUp.onnx",
+            "reward": 0.36075949367088606,
+            "creation_time": 1732197280.7086444,
+            "auxillary_file_paths": [
+                "results\\DroneGoesUp2\\DroneGoesUp\\DroneGoesUp-398459.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
