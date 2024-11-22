@@ -39,6 +39,11 @@ public class DroneAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = Vector3.zero;
+
+        SideSpeed = 0;
+        FrontSpeed = 0;
+        TurnSpeed = 0;
+        LiftSpeed = 0;
     }
 
     public override void CollectObservations(VectorSensor sensor)
