@@ -1,0 +1,38 @@
+{
+    "DroneGoesUp": {
+        "checkpoints": [
+            {
+                "steps": 499999,
+                "file_path": "results\\LearnToMoveUpGoal2\\DroneGoesUp\\DroneGoesUp-499999.onnx",
+                "reward": 0.5671875,
+                "creation_time": 1732789857.8875227,
+                "auxillary_file_paths": [
+                    "results\\LearnToMoveUpGoal2\\DroneGoesUp\\DroneGoesUp-499999.pt"
+                ]
+            },
+            {
+                "steps": 500006,
+                "file_path": "results\\LearnToMoveUpGoal2\\DroneGoesUp\\DroneGoesUp-500006.onnx",
+                "reward": 0.5659640905542545,
+                "creation_time": 1732789857.933796,
+                "auxillary_file_paths": [
+                    "results\\LearnToMoveUpGoal2\\DroneGoesUp\\DroneGoesUp-500006.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500006,
+            "file_path": "results\\LearnToMoveUpGoal2\\DroneGoesUp.onnx",
+            "reward": 0.5659640905542545,
+            "creation_time": 1732789857.933796,
+            "auxillary_file_paths": [
+                "results\\LearnToMoveUpGoal2\\DroneGoesUp\\DroneGoesUp-500006.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
