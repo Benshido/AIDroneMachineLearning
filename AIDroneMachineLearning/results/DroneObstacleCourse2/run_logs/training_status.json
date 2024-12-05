@@ -1,0 +1,65 @@
+{
+    "DroneObstacleCourse": {
+        "checkpoints": [
+            {
+                "steps": 499999,
+                "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-499999.onnx",
+                "reward": -0.10837438423645321,
+                "creation_time": 1733405391.477802,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-499999.pt"
+                ]
+            },
+            {
+                "steps": 999995,
+                "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-999995.onnx",
+                "reward": -0.04610951008645533,
+                "creation_time": 1733406282.2442353,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-999995.pt"
+                ]
+            },
+            {
+                "steps": 1499995,
+                "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-1499995.onnx",
+                "reward": 0.26618705035971224,
+                "creation_time": 1733407116.9134507,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-1499995.pt"
+                ]
+            },
+            {
+                "steps": 1999967,
+                "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-1999967.onnx",
+                "reward": 0.0,
+                "creation_time": 1733407958.6500428,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-1999967.pt"
+                ]
+            },
+            {
+                "steps": 2471259,
+                "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-2471259.onnx",
+                "reward": -0.06557377049180328,
+                "creation_time": 1733408789.5552902,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-2471259.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2471259,
+            "file_path": "results\\DroneObstacleCourse2\\DroneObstacleCourse.onnx",
+            "reward": -0.06557377049180328,
+            "creation_time": 1733408789.5552902,
+            "auxillary_file_paths": [
+                "results\\DroneObstacleCourse2\\DroneObstacleCourse\\DroneObstacleCourse-2471259.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

@@ -103,10 +103,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 03fc813c368bc2e47aecbf647449b7e7, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: a1f347d7962a28c4b948426bd789bc84, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorName: DroneObstacleCourse
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -126,11 +126,12 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 1000
+  MaxStep: 5000
   targetTransform: {fileID: 0}
   winMaterial: {fileID: 0}
   loseMaterial: {fileID: 0}
   floorMeshRenderer: {fileID: 0}
+  checkpoints: {fileID: 0}
   rigidbody: {fileID: 0}
   NegativeGravity: 490.5
   FrontSpeed: 0

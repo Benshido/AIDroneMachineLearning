@@ -36,20 +36,17 @@ public class DroneAgent : Agent
 
     private Vector3 lastPosition;
 
-    private float reward = 1f;
-
 
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = new Vector3(0.2f, -0.6f, 0.1f);
+        transform.localPosition = new Vector3(Random.Range(0.05f, 0.45f), -0.6f, Random.Range(0.3f, -0.08f));
+        targetTransform.localPosition = new Vector3(Random.Range(0.06f, 0.45f), -0.6f, Random.Range(-1.35f, -1.65f));
         LiftSpeed = 0;
         TurnSpeed = 0;
         SideSpeed = 0;
         FrontSpeed = 0;
         rigidbody.velocity = Vector3.zero;
-        reward = 1f;
-        //transform.localPosition = new Vector3(Random.Range(0.04f, 0.45f), -0.6f, Random.Range(-0.3f, -0.09f));
-        //targetTransform.localPosition = new Vector3(Random.Range(0.07f, 0.45f), -0.6f, Random.Range(-1.68f, 1.43f));
+
         for (int i = 0; i < checkpoints.transform.childCount; i++)
         {
             checkpoints.transform.GetChild(i).gameObject.SetActive(true);
@@ -83,7 +80,7 @@ public class DroneAgent : Agent
     {
         if(other.TryGetComponent<Goal>(out Goal goal))
         {
-            SetReward(+reward);
+            SetReward(+1);
             floorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
@@ -95,8 +92,7 @@ public class DroneAgent : Agent
         }
         if (other.TryGetComponent<Checkpoint>(out Checkpoint checkpoint))
         {
-            SetReward(+reward);
-            reward += 1f;
+            SetReward(+0.2f);
             other.gameObject.SetActive(false);
         }
     }

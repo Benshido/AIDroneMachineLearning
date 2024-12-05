@@ -1,0 +1,60 @@
+{
+    "DroneObstacleCourse": {
+        "checkpoints": [
+            {
+                "steps": 499996,
+                "file_path": "results\\DroneObstacleCourse\\DroneObstacleCourse\\DroneObstacleCourse-499996.onnx",
+                "reward": -0.34442270058708413,
+                "creation_time": 1733403894.0818074,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse\\DroneObstacleCourse\\DroneObstacleCourse-499996.pt"
+                ]
+            },
+            {
+                "steps": 507408,
+                "file_path": "results\\DroneObstacleCourse\\DroneObstacleCourse\\DroneObstacleCourse-507408.onnx",
+                "reward": -0.3402954661232807,
+                "creation_time": 1733403983.78049,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse\\DroneObstacleCourse\\DroneObstacleCourse-507408.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 507408,
+            "file_path": "results\\DroneObstacleCourse\\DroneObstacleCourse.onnx",
+            "reward": -0.3402954661232807,
+            "creation_time": 1733403983.78049,
+            "auxillary_file_paths": [
+                "results\\DroneObstacleCourse\\DroneObstacleCourse\\DroneObstacleCourse-507408.pt"
+            ]
+        }
+    },
+    "DroneGoesUp": {
+        "checkpoints": [
+            {
+                "steps": 72485,
+                "file_path": "results\\DroneObstacleCourse\\DroneGoesUp\\DroneGoesUp-72485.onnx",
+                "reward": -0.9012345679012346,
+                "creation_time": 1733403983.8739543,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourse\\DroneGoesUp\\DroneGoesUp-72485.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 72485,
+            "file_path": "results\\DroneObstacleCourse\\DroneGoesUp.onnx",
+            "reward": -0.9012345679012346,
+            "creation_time": 1733403983.8739543,
+            "auxillary_file_paths": [
+                "results\\DroneObstacleCourse\\DroneGoesUp\\DroneGoesUp-72485.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
