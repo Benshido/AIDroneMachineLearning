@@ -11,6 +11,7 @@ public class DroneAgent : Agent
     [SerializeField] private Material winMaterial;
     [SerializeField] private Material loseMaterial;
     [SerializeField] private MeshRenderer floorMeshRenderer;
+    [SerializeField] private GameObject checkpoints;
 
     public new Rigidbody rigidbody;
     public float NegativeGravity = 490.5f;
@@ -49,6 +50,10 @@ public class DroneAgent : Agent
         reward = 1f;
         //transform.localPosition = new Vector3(Random.Range(0.04f, 0.45f), -0.6f, Random.Range(-0.3f, -0.09f));
         //targetTransform.localPosition = new Vector3(Random.Range(0.07f, 0.45f), -0.6f, Random.Range(-1.68f, 1.43f));
+        for (int i = 0; i < checkpoints.transform.childCount; i++)
+        {
+            checkpoints.transform.GetChild(i).gameObject.SetActive(true);
+        }
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -92,6 +97,7 @@ public class DroneAgent : Agent
         {
             SetReward(+reward);
             reward += 1f;
+            other.gameObject.SetActive(false);
         }
     }
 
