@@ -39,11 +39,11 @@ public class DroneAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = Vector3.zero;
-
+        LiftSpeed = 0;
+        TurnSpeed = 0;
         SideSpeed = 0;
         FrontSpeed = 0;
-        TurnSpeed = 0;
-        LiftSpeed = 0;
+        rigidbody.velocity = Vector3.zero;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -82,6 +82,10 @@ public class DroneAgent : Agent
             SetReward(-1f);
             floorMeshRenderer.material = loseMaterial;
             EndEpisode();
+        }
+        if (other.TryGetComponent<Checkpoint>(out Checkpoint checkpoint))
+        {
+            SetReward(+1f);
         }
     }
 
