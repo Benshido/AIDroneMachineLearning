@@ -75,6 +75,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4715579511095883129, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8005208430452487881}
+    - targetCorrespondingSourceObject: {fileID: 4715579511095883129, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5001553477295213852}
+    - targetCorrespondingSourceObject: {fileID: 4715579511095883129, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1669815919031148192}
   m_SourcePrefab: {fileID: 100100000, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
 --- !u!1 &560846835124697209 stripped
 GameObject:
@@ -152,6 +158,49 @@ MonoBehaviour:
   LiftDeadZone: 0.1
   TurnDeadZone: 0.1
   SpeedDelay: 0.5
+--- !u!114 &5001553477295213852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560846835124697209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 1
+  TakeActionsBetweenDecisions: 1
+--- !u!114 &-1669815919031148192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560846835124697209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
+  - Wall
+  - Checkpoint
+  - Target
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.01
+  m_RayLength: 30
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967241
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0.17445226, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
 --- !u!54 &9194126774109824748 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4116716927613791212, guid: a678962fce6478445ad107932ea6cd7e, type: 3}

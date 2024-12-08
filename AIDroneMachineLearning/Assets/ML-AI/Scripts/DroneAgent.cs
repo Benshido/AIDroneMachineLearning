@@ -13,6 +13,8 @@ public class DroneAgent : Agent
     [SerializeField] private MeshRenderer floorMeshRenderer;
     [SerializeField] private GameObject checkpoints;
 
+    private int checkpointCount = 0;
+
     public new Rigidbody rigidbody;
     public float NegativeGravity = 490.5f;
     public float FrontSpeed = 0;
@@ -92,8 +94,17 @@ public class DroneAgent : Agent
         }
         if (other.TryGetComponent<Checkpoint>(out Checkpoint checkpoint))
         {
-            SetReward(+0.2f);
-            other.gameObject.SetActive(false);
+            Debug.Log("Check: " + checkpoints.transform.GetChild(checkpointCount).gameObject + "AND " + other.gameObject);
+            if(checkpoints.transform.GetChild(checkpointCount).gameObject == other.gameObject)
+            {
+                SetReward(+0.2f);
+                //other.gameObject.SetActive(false);
+            }
+            else
+            {
+                SetReward(-0.2f);
+                //other.gameObject.SetActive(false);
+            }
         }
     }
 
