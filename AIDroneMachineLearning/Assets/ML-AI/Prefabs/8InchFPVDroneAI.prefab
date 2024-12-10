@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4715579511095883129, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1669815919031148192}
+    - targetCorrespondingSourceObject: {fileID: 4715579511095883129, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3693216651414669445}
   m_SourcePrefab: {fileID: 100100000, guid: a678962fce6478445ad107932ea6cd7e, type: 3}
 --- !u!1 &560846835124697209 stripped
 GameObject:
@@ -103,16 +106,16 @@ MonoBehaviour:
     VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 3
+      m_NumContinuousActions: 4
       BranchSizes: 
-    VectorActionSize: 03000000
+    VectorActionSize: 04000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: a1f347d7962a28c4b948426bd789bc84, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: ae3eb77f3744f8d47b5b63cfc9231602, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
-  m_BehaviorName: DroneObstacleCourse
+  m_BehaviorName: DroneObstacleCourseAttemptThree
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -132,10 +135,13 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 7500
   targetTransform: {fileID: 0}
-  winMaterial: {fileID: 0}
-  loseMaterial: {fileID: 0}
+  winMaterial: {fileID: 2100000, guid: a1950fcf4f82b97439a48343458161d6, type: 2}
+  loseMaterial: {fileID: 2100000, guid: 2b31e444ae0b45f409f15a30f7d097a8, type: 2}
+  transparent: {fileID: 2100000, guid: d7a1406ed66289e47a90fba75120ded3, type: 2}
+  checkpoint: {fileID: 2100000, guid: d5cbe12773530624bbdb3b7d041013d9, type: 2}
+  wrongCheckpoint: {fileID: 2100000, guid: a6edc9ef3b90b1148b1ede6308cc0a3a, type: 2}
   floorMeshRenderer: {fileID: 0}
   checkpoints: {fileID: 0}
   rigidbody: {fileID: 0}
@@ -184,14 +190,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: RayPerceptionSensor
+  m_SensorName: RayPerceptionSensorUp
   m_DetectableTags:
   - Wall
   - Checkpoint
   - Target
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 180
-  m_SphereCastRadius: 0.01
+  m_SphereCastRadius: 0
   m_RayLength: 30
   m_RayLayerMask:
     serializedVersion: 2
@@ -200,7 +206,36 @@ MonoBehaviour:
   rayHitColor: {r: 1, g: 0.17445226, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0
-  m_EndVerticalOffset: 0
+  m_EndVerticalOffset: 10
+--- !u!114 &3693216651414669445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560846835124697209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensorDown
+  m_DetectableTags:
+  - Wall
+  - Checkpoint
+  - Target
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0
+  m_RayLength: 30
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 449
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: -10
 --- !u!54 &9194126774109824748 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4116716927613791212, guid: a678962fce6478445ad107932ea6cd7e, type: 3}

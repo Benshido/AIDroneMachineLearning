@@ -10,6 +10,9 @@ public class DroneAgent : Agent
     [SerializeField] private Transform targetTransform;
     [SerializeField] private Material winMaterial;
     [SerializeField] private Material loseMaterial;
+    [SerializeField] private Material transparent;
+    [SerializeField] private Material checkpoint;
+    [SerializeField] private Material wrongCheckpoint;
     [SerializeField] private MeshRenderer floorMeshRenderer;
     [SerializeField] private GameObject checkpoints;
 
@@ -47,11 +50,13 @@ public class DroneAgent : Agent
         TurnSpeed = 0;
         SideSpeed = 0;
         FrontSpeed = 0;
+        checkpointCount = 0;
         rigidbody.velocity = Vector3.zero;
 
         for (int i = 0; i < checkpoints.transform.childCount; i++)
         {
             checkpoints.transform.GetChild(i).gameObject.SetActive(true);
+            checkpoints.transform.GetChild(i).GetComponent<MeshRenderer>().material = checkpoint;
         }
     }
 
@@ -82,7 +87,7 @@ public class DroneAgent : Agent
     {
         if(other.TryGetComponent<Goal>(out Goal goal))
         {
-            SetReward(+1);
+            SetReward(+5f);
             floorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
@@ -94,15 +99,17 @@ public class DroneAgent : Agent
         }
         if (other.TryGetComponent<Checkpoint>(out Checkpoint checkpoint))
         {
-            Debug.Log("Check: " + checkpoints.transform.GetChild(checkpointCount).gameObject + "AND " + other.gameObject);
             if(checkpoints.transform.GetChild(checkpointCount).gameObject == other.gameObject)
             {
                 SetReward(+0.2f);
+                other.GetComponent<MeshRenderer>().material = transparent;
+                checkpointCount++;
                 //other.gameObject.SetActive(false);
             }
             else
             {
-                SetReward(-0.2f);
+                SetReward(-0.1f);
+                other.GetComponent<MeshRenderer>().material = wrongCheckpoint;
                 //other.gameObject.SetActive(false);
             }
         }

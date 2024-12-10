@@ -178,10 +178,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (8)
@@ -259,10 +255,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -342,10 +334,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (9)
@@ -424,10 +412,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (10)
@@ -436,20 +420,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.684
       objectReference: {fileID: 0}
-    - target: {fileID: 8212410246992488332, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: checkpoints
-      value: 
-      objectReference: {fileID: 304694949}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
---- !u!1 &304694949 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5626379598980974833, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-  m_PrefabInstance: {fileID: 304694948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &356414029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,10 +480,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -587,10 +558,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -764,10 +731,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (3)
@@ -846,10 +809,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (2)
@@ -927,10 +886,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -1102,10 +1057,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (11)
@@ -1183,10 +1134,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -1266,10 +1213,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (7)
@@ -1347,10 +1290,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -1430,10 +1369,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.03
       objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
-      objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
       value: BasicCourse (6)
@@ -1511,10 +1446,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name
@@ -1598,10 +1529,6 @@ PrefabInstance:
     - target: {fileID: 3389062039284681814, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440757714560506386, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
-      propertyPath: m_BehaviorName
-      value: DroneObstacleCourse
       objectReference: {fileID: 0}
     - target: {fileID: 3772564900877814765, guid: af84226e800bf554abc9fa93cbf37c3f, type: 3}
       propertyPath: m_Name

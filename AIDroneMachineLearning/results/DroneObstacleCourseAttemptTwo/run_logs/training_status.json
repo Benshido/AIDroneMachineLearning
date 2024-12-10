@@ -1,0 +1,38 @@
+{
+    "DroneObstacleCourseAttemptTwo": {
+        "checkpoints": [
+            {
+                "steps": 499959,
+                "file_path": "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo-499959.onnx",
+                "reward": -0.7529411736656638,
+                "creation_time": 1733828581.8759203,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo-499959.pt"
+                ]
+            },
+            {
+                "steps": 500087,
+                "file_path": "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo-500087.onnx",
+                "reward": -0.7529411736656638,
+                "creation_time": 1733828581.9509976,
+                "auxillary_file_paths": [
+                    "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo-500087.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500087,
+            "file_path": "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo.onnx",
+            "reward": -0.7529411736656638,
+            "creation_time": 1733828581.9509976,
+            "auxillary_file_paths": [
+                "results\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo\\DroneObstacleCourseAttemptTwo-500087.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
