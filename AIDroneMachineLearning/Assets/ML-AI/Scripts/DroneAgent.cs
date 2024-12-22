@@ -16,7 +16,7 @@ public class DroneAgent : Agent
     [SerializeField] private MeshRenderer floorMeshRenderer;
     [SerializeField] private GameObject checkpoints;
 
-    private int checkpointCount = 0;
+    //private int checkpointCount = 0;
 
     public new Rigidbody rigidbody;
     public float NegativeGravity = 490.5f;
@@ -50,13 +50,13 @@ public class DroneAgent : Agent
         TurnSpeed = 0;
         SideSpeed = 0;
         FrontSpeed = 0;
-        checkpointCount = 0;
+        //checkpointCount = 0;
         rigidbody.velocity = Vector3.zero;
 
         for (int i = 0; i < checkpoints.transform.childCount; i++)
         {
             checkpoints.transform.GetChild(i).gameObject.SetActive(true);
-            checkpoints.transform.GetChild(i).GetComponent<MeshRenderer>().material = checkpoint;
+            //checkpoints.transform.GetChild(i).GetComponent<MeshRenderer>().material = checkpoint;
         }
     }
 
@@ -99,19 +99,19 @@ public class DroneAgent : Agent
         }
         if (other.TryGetComponent<Checkpoint>(out Checkpoint checkpoint))
         {
-            if(checkpoints.transform.GetChild(checkpointCount).gameObject == other.gameObject)
-            {
-                SetReward(+0.2f);
-                other.GetComponent<MeshRenderer>().material = transparent;
-                checkpointCount++;
-                //other.gameObject.SetActive(false);
-            }
-            else
-            {
-                SetReward(-0.1f);
-                other.GetComponent<MeshRenderer>().material = wrongCheckpoint;
-                //other.gameObject.SetActive(false);
-            }
+            //if(checkpoints.transform.GetChild(checkpointCount).gameObject == other.gameObject)
+            //{
+            SetReward(+0.2f);
+            //other.GetComponent<MeshRenderer>().material = transparent;
+            //checkpointCount++;
+            other.gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            //    SetReward(-0.1f);
+            //    other.GetComponent<MeshRenderer>().material = wrongCheckpoint;
+            //    //other.gameObject.SetActive(false);
+            //}
         }
     }
 

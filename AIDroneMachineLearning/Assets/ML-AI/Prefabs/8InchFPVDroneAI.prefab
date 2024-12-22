@@ -112,10 +112,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: ae3eb77f3744f8d47b5b63cfc9231602, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 945682ac3060ce54a81981e90df28569, type: 3}
   m_InferenceDevice: 1
-  m_BehaviorType: 1
-  m_BehaviorName: DroneObstacleCourseAttemptThree
+  m_BehaviorType: 0
+  m_BehaviorName: BasicCourseFour
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1

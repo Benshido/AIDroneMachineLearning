@@ -1,0 +1,38 @@
+{
+    "BasicCourseFour": {
+        "checkpoints": [
+            {
+                "steps": 499939,
+                "file_path": "results\\BasicCourseFour\\BasicCourseFour\\BasicCourseFour-499939.onnx",
+                "reward": -0.5523809485492253,
+                "creation_time": 1734824799.3191478,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour\\BasicCourseFour\\BasicCourseFour-499939.pt"
+                ]
+            },
+            {
+                "steps": 500067,
+                "file_path": "results\\BasicCourseFour\\BasicCourseFour\\BasicCourseFour-500067.onnx",
+                "reward": -0.5523809485492253,
+                "creation_time": 1734824799.4913929,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour\\BasicCourseFour\\BasicCourseFour-500067.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500067,
+            "file_path": "results\\BasicCourseFour\\BasicCourseFour.onnx",
+            "reward": -0.5523809485492253,
+            "creation_time": 1734824799.4913929,
+            "auxillary_file_paths": [
+                "results\\BasicCourseFour\\BasicCourseFour\\BasicCourseFour-500067.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
