@@ -1,0 +1,65 @@
+{
+    "BasicCourseFour": {
+        "checkpoints": [
+            {
+                "steps": 2499946,
+                "file_path": "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-2499946.onnx",
+                "reward": -0.14999998157674616,
+                "creation_time": 1734998407.7124562,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-2499946.pt"
+                ]
+            },
+            {
+                "steps": 2999947,
+                "file_path": "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-2999947.onnx",
+                "reward": -0.013043456967326178,
+                "creation_time": 1734999241.3107498,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-2999947.pt"
+                ]
+            },
+            {
+                "steps": 3499963,
+                "file_path": "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-3499963.onnx",
+                "reward": 0.19318184341219338,
+                "creation_time": 1735000107.5015237,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-3499963.pt"
+                ]
+            },
+            {
+                "steps": 3999996,
+                "file_path": "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-3999996.onnx",
+                "reward": 0.14375002309679985,
+                "creation_time": 1735000966.369839,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-3999996.pt"
+                ]
+            },
+            {
+                "steps": 4000037,
+                "file_path": "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-4000037.onnx",
+                "reward": 0.147058846319423,
+                "creation_time": 1735000966.531996,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-4000037.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4000037,
+            "file_path": "results\\BasicCourseFour6\\BasicCourseFour.onnx",
+            "reward": 0.147058846319423,
+            "creation_time": 1735000966.531996,
+            "auxillary_file_paths": [
+                "results\\BasicCourseFour6\\BasicCourseFour\\BasicCourseFour-4000037.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

@@ -72,6 +72,11 @@ public class DroneAgent : Agent
         YRotationInput = actions.ContinuousActions[1];
         ForwardAccelerationInput = actions.ContinuousActions[2];
         SidewaysAccelerationInput = actions.ContinuousActions[3];
+
+        if(StepCount >= MaxStep)
+        {
+            SetReward(-1f);
+        }
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -87,7 +92,7 @@ public class DroneAgent : Agent
     {
         if(other.TryGetComponent<Goal>(out Goal goal))
         {
-            SetReward(+5f);
+            SetReward(+1.5f);
             floorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
@@ -101,7 +106,7 @@ public class DroneAgent : Agent
         {
             //if(checkpoints.transform.GetChild(checkpointCount).gameObject == other.gameObject)
             //{
-            SetReward(+0.2f);
+            SetReward(+0.1f);
             //other.GetComponent<MeshRenderer>().material = transparent;
             //checkpointCount++;
             other.gameObject.SetActive(false);
