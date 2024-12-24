@@ -75,7 +75,7 @@ public class DroneAgent : Agent
 
         if(StepCount >= MaxStep)
         {
-            SetReward(-1f);
+            SetReward(-1.5f);
         }
     }
 
@@ -98,7 +98,7 @@ public class DroneAgent : Agent
         }
         if (other.TryGetComponent<Wall>(out Wall wall))
         {
-            SetReward(-1f);
+            SetReward(-1.3f);
             floorMeshRenderer.material = loseMaterial;
             EndEpisode();
         }

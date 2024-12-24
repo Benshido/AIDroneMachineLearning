@@ -1,0 +1,56 @@
+{
+    "BasicCourseFour": {
+        "checkpoints": [
+            {
+                "steps": 499952,
+                "file_path": "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-499952.onnx",
+                "reward": -0.47499993603144375,
+                "creation_time": 1735067354.4482048,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-499952.pt"
+                ]
+            },
+            {
+                "steps": 999942,
+                "file_path": "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-999942.onnx",
+                "reward": 0.12307698451555692,
+                "creation_time": 1735068124.0777237,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-999942.pt"
+                ]
+            },
+            {
+                "steps": 1499970,
+                "file_path": "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-1499970.onnx",
+                "reward": -0.4166665930478346,
+                "creation_time": 1735068888.3804908,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-1499970.pt"
+                ]
+            },
+            {
+                "steps": 1502171,
+                "file_path": "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-1502171.onnx",
+                "reward": -0.4249999290332198,
+                "creation_time": 1735068960.4215314,
+                "auxillary_file_paths": [
+                    "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-1502171.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1502171,
+            "file_path": "results\\BasicCourseFour9\\BasicCourseFour.onnx",
+            "reward": -0.4249999290332198,
+            "creation_time": 1735068960.4215314,
+            "auxillary_file_paths": [
+                "results\\BasicCourseFour9\\BasicCourseFour\\BasicCourseFour-1502171.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

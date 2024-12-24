@@ -112,7 +112,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 28bc1078aff146441a4400ca10f123e7, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 4e7e39c9d9fbff343a1ae7905beb01db, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: BasicCourseFour
@@ -135,7 +135,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 7500
+  MaxStep: 1200
   targetTransform: {fileID: 0}
   winMaterial: {fileID: 2100000, guid: a1950fcf4f82b97439a48343458161d6, type: 2}
   loseMaterial: {fileID: 2100000, guid: 2b31e444ae0b45f409f15a30f7d097a8, type: 2}
