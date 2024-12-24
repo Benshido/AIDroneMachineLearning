@@ -45,7 +45,7 @@ public class DroneAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = new Vector3(Random.Range(0.05f, 0.45f), -0.6f, Random.Range(0.3f, -0.08f));
-        targetTransform.localPosition = new Vector3(Random.Range(0.06f, 0.45f), -0.6f, Random.Range(-1.35f, -1.65f));
+        targetTransform.localPosition = new Vector3(Random.Range(0.06f, 0.45f), -0.3f, Random.Range(-1.35f, -1.65f));
         LiftSpeed = 0;
         TurnSpeed = 0;
         SideSpeed = 0;

@@ -135,7 +135,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 1200
+  MaxStep: 1000
   targetTransform: {fileID: 0}
   winMaterial: {fileID: 2100000, guid: a1950fcf4f82b97439a48343458161d6, type: 2}
   loseMaterial: {fileID: 2100000, guid: 2b31e444ae0b45f409f15a30f7d097a8, type: 2}
